@@ -33,6 +33,9 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
+    #
+    # Because if you redefined the .nil? method on your object then obj.nil?
+    # will make use of the new method whereas obj == nil won't.
 
   end
 
