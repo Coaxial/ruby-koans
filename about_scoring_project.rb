@@ -35,7 +35,7 @@ def score(dice)
 
   return points if dice.empty?
 
-  die = Array.new(7, 0)
+  die = Hash.new(0)
   dice.each {|d| die[d] += 1}
 
   if die[1] >= 3
